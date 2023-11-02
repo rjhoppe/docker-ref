@@ -1,4 +1,5 @@
 FROM ubuntu:jammy
+# Below tells system to use UTF-8 mode (not always enabled by default)
 ENV LANG=C.UTF-8
 
 RUN : \
