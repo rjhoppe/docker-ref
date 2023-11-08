@@ -23,3 +23,20 @@ Order Docker to remove all stopped containers, pods, dangling images, all build 
 docker system prone
 docker system prone -f
 ```
+Run a Docker container, attach a volume, and run in detached mode
+```
+docker run --name [container name] -p 80:80 -d -v $(pwd):/[directory] [image name]
+```
+EX:
+```
+docker run --name fastapi-container -p 80:80 -d -v $(pwd):/code fastapi-image
+```
+Spin up a Docker container using Docker Compose YAML file
+```
+docker-compose up
+docker-compose up --build -d
+```
+Safely shut down a Docker container using Docker Compose
+```
+docker-compose down
+```
