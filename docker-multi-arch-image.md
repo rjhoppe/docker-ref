@@ -21,7 +21,7 @@ RUN echo hi > f
 ```
 Focal supports both amd64 and arm64
 
-## 6: Run this command to build for arm64 and then build amd64 and then push to GHCR with the assigned tag
+## 6. Run this command to build for arm64 and then build amd64 and then push to GHCR with the assigned tag
 ```
 docker buildx build --push --tag ghcr.io/rjhoppe/multiarch-example:latest --platform linux/arm64, linux/amd64 .
 ```
