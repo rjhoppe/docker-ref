@@ -1,7 +1,3 @@
-Start a new container
-```
-docker run -t -i [container image name]
-```
 Search Docker for a particular kind of container image
 ```
 docker search [specs]
@@ -9,6 +5,14 @@ docker search [specs]
 EX for an image with 'tensorflow':
 ```
 docker search tensorflow
+```
+Download a Docker image to your local machine
+```
+Docker pull [image name]
+```
+Start a new container
+```
+docker run -t -i [container image name]
 ```
 Add the '--rm' flag to have the container get deleted upon exiting
 ```
