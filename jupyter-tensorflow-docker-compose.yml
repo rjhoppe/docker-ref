@@ -1,0 +1,10 @@
+services:
+  transformers-notebook:
+    image: jupyter/tensorflow-notebook
+    ports:
+      - 8000:8888
+    environment:
+      - JUPYTER_ALLOW_INSECURE_WRITES=true
+    volumes:
+      - ./:/home/jovyan
+    command: "start-notebook.py --NotebookApp.token='' --NotebookApp.password=''"
