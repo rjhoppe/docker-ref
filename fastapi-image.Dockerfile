@@ -1,4 +1,4 @@
-Find full repo here: 
+Find full repo here: https://github.com/rjhoppe/python-fastapi-docker-env
 
 ```
 FROM python:3.10-slim
