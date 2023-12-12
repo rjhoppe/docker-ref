@@ -2,6 +2,14 @@ Start a new container
 ```
 docker run -t -i [container image name]
 ```
+Search Docker for a particular kind of container image
+```
+docker search [specs]
+```
+EX for an image with 'tensorflow':
+```
+docker search tensorflow
+```
 Add the '--rm' flag to have the container get deleted upon exiting
 ```
 docker run -t -i --rm [container image name]
