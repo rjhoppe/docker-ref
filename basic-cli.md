@@ -26,6 +26,10 @@ Shows you all the dormant containers (not running, but not deleted)
 ```
 docker ps -a
 ```
+Show all images downloaded locally
+```
+docker image ls
+```
 Delete a container
 ```
 docker rm [container id]
