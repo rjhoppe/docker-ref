@@ -7,4 +7,5 @@ RUN : \
 	&& apt-get install -y --no-install-recommends \
 		locales \
 	&& apt-cache clean \
-	&& rm -rf /var/lib/apt/lists/*
+	&& rm -rf /var/lib/apt/lists/* \
+	&& :
