@@ -26,6 +26,10 @@ Shows you all the dormant containers (not running, but not deleted)
 ```
 docker ps -a
 ```
+Remove all images that are stopped but not running
+```
+docker container prune
+```
 Show all images downloaded locally
 ```
 docker image ls
