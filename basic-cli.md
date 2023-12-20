@@ -8,7 +8,7 @@ docker search tensorflow
 ```
 Download a Docker image to your local machine
 ```
-Docker pull [image name]
+docker pull [image name]
 ```
 Start a new container
 ```
@@ -50,6 +50,10 @@ docker run --name [container name] -p 80:80 -d -v $(pwd):/[directory] [image nam
 EX:
 ```
 docker run --name fastapi-container -p 80:80 -d -v $(pwd):/code fastapi-image
+```
+Passing args to a Docker container at buildtime
+```
+docker build --build-arg [add arguments here] -t [container name] .
 ```
 Spin up a Docker container using Docker Compose YAML file
 ```
