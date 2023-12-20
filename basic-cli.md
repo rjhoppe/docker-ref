@@ -56,6 +56,8 @@ Look at the history for a particular Docker image
 docker history [container/image name]
 ```
 Passing args to a Docker container at buildtime
+
+Note: DO NOT pass secrets this way as they will be in plaintext
 ```
 docker build --build-arg [add arguments here] -t [container name] .
 ```
