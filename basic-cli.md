@@ -51,6 +51,10 @@ EX:
 ```
 docker run --name fastapi-container -p 80:80 -d -v $(pwd):/code fastapi-image
 ```
+Look at the history for a particular Docker image
+```
+docker history [container/image name]
+```
 Passing args to a Docker container at buildtime
 ```
 docker build --build-arg [add arguments here] -t [container name] .
