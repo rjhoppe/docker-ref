@@ -2,7 +2,7 @@ FROM ubuntu:focal
 ENV LANG=C.UTF-8
 ARG TAGS
 WORKDIR /usr/local/bin
-ARG DEBIAN_FRONTEN=noninteractive
+ARG DEBIAN_FRONTEND=noninteractive
 RUN : \
     && apt update \
     && apt install -y software-properties-common \
